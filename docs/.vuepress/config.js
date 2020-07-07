@@ -49,7 +49,7 @@ module.exports = {
     editLinkText: 'Help us improve this page!',
     docsBranch: "master",
     docsDir: "docs",
-    docsRepo: "https://github.com/jvautier/docs",
+    docsRepo: "https://github.com/jvautier/vuepress-helpcenter-template",
     searchMaxSuggestions: 10
   }
 };
