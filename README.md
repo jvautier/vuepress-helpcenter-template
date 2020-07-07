@@ -19,8 +19,6 @@ or
 
 ## Setup
 
-With `make`:
-
 ```sh
 make setup
 ```
@@ -29,26 +27,20 @@ _With `docker-compose` there is no setup phase_
 
 ## Development setup
 
-With `make`:
-
 ```sh
 make dev
 ```
-
-or With `docker-compose`:
+or
 ```sh
 docker-compose up -d --build
 ```
 
 ## Build
 
-With `make`:
-
 ```sh
 make build
 ```
-
-or With `docker-compose`:
+or
 ```sh
 docker-compose build
 docker-compose run app yarn docs:build
@@ -56,12 +48,9 @@ docker-compose run app yarn docs:build
 
 ## Deploy
 
-With `make`:
-
 ```sh
 make deploy
 ```
-
 or
 ```sh
 ./scripts/deploy.sh
