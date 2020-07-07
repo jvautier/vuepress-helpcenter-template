@@ -2,18 +2,23 @@
 
 > A template for creating a help-center with [vuepress](https://vuepress.vuejs.org/).
 
-![screenshot-001](screenshot-001.png)
-![screenshot-002](screenshot-002.png)
-
 See on [github pages](https://jvautier.github.io/vuepress-helpcenter-template/)
 
-## Development setup
 
-With [devcontainer](https://code.visualstudio.com/docs/remote/containers):
 
-```sh
-yarn docs:dev
-```
+![screenshot-002](screenshot-002.png)
+
+## Requirements
+
+- [yarn](https://yarnpkg.com/)
+
+or
+- [docker-compose](https://docs.docker.com/compose/)
+
+or
+- [devcontainer](https://code.visualstudio.com/docs/remote/containers)
+
+## Setup
 
 With `make`:
 
@@ -21,23 +26,41 @@ With `make`:
 make dev
 ```
 
-With `docker-compose`:
+_With `docker-compose` there is no setup phase_
+
+## Development setup
+
+With `make`:
+
+```sh
+make dev
+```
+
+or With `docker-compose`:
 ```sh
 docker-compose up -d --build
 ```
 
 ## Build
 
-With [devcontainer](https://code.visualstudio.com/docs/remote/containers):
-
-```sh
-yarn docs:build
-```
-
 With `make`:
 
 ```sh
 make build
+```
+
+or With `docker-compose`:
+```sh
+docker-compose build
+docker-compose run app yarn docs:build
+```
+
+## Deploy
+
+With `make`:
+
+```sh
+make deploy
 ```
 
 With `docker-compose`:
