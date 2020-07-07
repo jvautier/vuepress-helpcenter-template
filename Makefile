@@ -21,3 +21,5 @@ clean: ## Clean
 	rm -rf ./node_modules
 	rm -rf ./public
 	rm -rf yarn.lock
+
+all: | setup build deploy clean
