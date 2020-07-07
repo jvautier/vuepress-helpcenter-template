@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - ./docs:/app/docs
+      - ./public:/app/public
+      - ./package.json:/app/package.json
+    ports:
+      - "8081:8080"

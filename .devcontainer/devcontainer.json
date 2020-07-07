@@ -1,0 +1,11 @@
+{
+    "name": "help-center",
+    "dockerFile": "Dockerfile",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "forwardPorts": [8080],
+    "postCreateCommand": "yarn install",
+    "remoteUser": "node"
+
+}
