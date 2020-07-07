@@ -5,8 +5,7 @@
 See on [github pages](https://jvautier.github.io/vuepress-helpcenter-template/)
 
 
-
-![screenshot-002](screenshot-002.png)
+![screenshot-002](assets/img/screenshot-002.png)
 
 ## Requirements
 
