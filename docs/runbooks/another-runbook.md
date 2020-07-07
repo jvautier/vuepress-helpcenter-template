@@ -1,14 +1,14 @@
-# Another runbook
+# A runbook
 
 > Some context
 
 ## Goals
 
-Create an artifact with a MYSQL dump and assets
+A goal.
 
 ## Systems Affected
 
-Application backend > Application > Users
+A system > Another system > Another another system ...
 
 ## Requirements
 

@@ -13,6 +13,9 @@ dev: ## Run Development
 build: ## Build artifact
 	yarn docs:build
 
+deploy: ## Build artifact
+	./scripts/deploy.sh
+
 clean: ## Clean
 	@echo "clean"
 	rm -rf ./node_modules

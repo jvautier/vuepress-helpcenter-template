@@ -2,7 +2,7 @@ const fs = require("fs")
 const path = require("path")
 
 module.exports = {
-  base: "/vuepress-helpcenter-template",
+  base: "/vuepress-helpcenter-template/",
   dest: "./public/",
   title: "Help Center",
   tagline: "You know, for help !",
@@ -18,8 +18,8 @@ module.exports = {
         text: 'Links',
         ariaLabel: 'Links',
         items: [
-          { text: 'Monitoring', link: 'https://google.com' },
-          { text: 'Logs', link: 'https://youtube.com' }
+          { text: 'a link', link: 'https://google.com' },
+          { text: 'another link', link: 'https://youtube.com' }
         ]
       }
     ],
@@ -80,12 +80,12 @@ function getNavItems(folder) {
         fs.statSync(path.join(`${__dirname}/../${folder}`, item)).isFile() &&
         extension.includes(path.extname(item))
     )
-    .map(function(x){return `${folder}` + "/" + x.replace(/.md/g, '');});
+    .map(function(x){return `/${folder}` + "/" + x.replace(/.md/g, '');});
   
   const items = [];
 
   files.forEach(function(item){
-    items.push({text:item.replace(`${folder}/`,''), link:item});
+    items.push({text:item.replace(`/${folder}/`,''), link:item});
   });
   
   return [...items];

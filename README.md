@@ -5,6 +5,8 @@
 ![screenshot-001](screenshot-001.png)
 ![screenshot-002](screenshot-002.png)
 
+See on [github pages](https://jvautier.github.io/vuepress-helpcenter-template/)
+
 ## Development setup
 
 With [devcontainer](https://code.visualstudio.com/docs/remote/containers):
