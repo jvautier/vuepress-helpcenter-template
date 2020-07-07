@@ -22,7 +22,7 @@ or
 With `make`:
 
 ```sh
-make dev
+make setup
 ```
 
 _With `docker-compose` there is no setup phase_
