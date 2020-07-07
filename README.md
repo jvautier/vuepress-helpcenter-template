@@ -63,10 +63,9 @@ With `make`:
 make deploy
 ```
 
-With `docker-compose`:
+or
 ```sh
-docker-compose build
-docker-compose run app yarn docs:build
+./scripts/deploy.sh
 ```
 
 ## License
